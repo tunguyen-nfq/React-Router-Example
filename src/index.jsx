@@ -7,7 +7,6 @@ import Invoices from './routes/invoices';
 import Invoice from './routes/invoice';
 import './main.css';
 
-const rootElement = document.getElementById('app');
 ReactDOM.render(
   <BrowserRouter>
     <Routes>
@@ -35,5 +34,5 @@ ReactDOM.render(
       </Route>
     </Routes>
   </BrowserRouter>,
-  rootElement
+  document.getElementById('app')
 );
